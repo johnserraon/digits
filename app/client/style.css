@@ -27,6 +27,10 @@ body .navbar {
   --bs-navbar-hover-color: var(--matr-navbar-highlight-text);
 }
 
+.navbar a.nav-link.active {
+  color: var(--matr-navbar-highlight-text);
+}
+
 .bg-dark a.dropdown-item {
   color: var(--matr-navbar-bg);
 }
