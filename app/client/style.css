@@ -51,3 +51,7 @@ footer, footer a {
 footer a:hover {
   color: var(--matr-navbar-highlight-text);
 }
+
+.navbar a.nav-link.active {
+  color: var(--matr-navbar-highlight-text);
+}
