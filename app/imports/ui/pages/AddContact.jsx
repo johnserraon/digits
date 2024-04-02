@@ -57,7 +57,7 @@ const AddContact = () => {
                   <Col><TextField name="image" /></Col>
                 </Row>
                 <LongTextField name="description" />
-                <SubmitField />
+                <SubmitField value="Submit" />
                 <ErrorsField />
               </Card.Body>
             </Card>

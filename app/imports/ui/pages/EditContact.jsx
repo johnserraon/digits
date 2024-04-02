@@ -57,7 +57,7 @@ const EditContact = () => {
                 <LongTextField name="description" />
                 <ErrorsField />
                 <HiddenField name="owner" />
-                <SubmitField />
+                <SubmitField value="Submit" />
               </Card.Body>
             </Card>
           </AutoForm>
