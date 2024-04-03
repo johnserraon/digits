@@ -103,6 +103,8 @@ You can now add new Stuff documents, and list the Stuff you have created. Note y
 
 The Add Contact page allows a user to add a new contact card containing a first name, last name, business address, image URL, and description of their contact.
 
+![](https://raw.githubusercontent.com/johnserraon/digits/cleanup/doc/digits-add-contact.png?token=GHSAT0AAAAAACNAL4U4ITVL3UFCVLS4UYCMZQM6X5Q)
+
 #### List Contacts page
 
 The List Contacts page shows all contact cards that the user has created or has associated with their account.
