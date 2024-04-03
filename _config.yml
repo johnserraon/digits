@@ -2,7 +2,10 @@ title: digits
 description: A Meteor-based address book for organizing business contacts
 google_analytics:
 show_downloads: true
-theme: jekyll-theme-tactile
+theme: jekyll-theme-cayman
+remote_theme: pages-themes/tactile@v0.2.0
+plugins:
+  - jekyll-remote-theme
 
 gems:
   - jekyll-mentions
