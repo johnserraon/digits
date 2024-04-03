@@ -74,7 +74,7 @@ The following sections describe the major features of digits.
 
 When you retrieve the app at http://localhost:3000, this is what should be displayed:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/landing-page.png)
+![](https://raw.githubusercontent.com/johnserraon/digits/cleanup/doc/digits-landing-nouser.png?token=GHSAT0AAAAAACNAL4U5I4RGPXANCZINT4DQZQM6ZHQ)
 
 The next step is to use the Login menu to either Login to an existing account or register a new account.
 
@@ -82,22 +82,22 @@ The next step is to use the Login menu to either Login to an existing account or
 
 Clicking on the Login link, then on the Sign In menu item displays this page:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/signin-page.png)
+![](https://raw.githubusercontent.com/johnserraon/digits/cleanup/doc/digits-login.png?token=GHSAT0AAAAAACNAL4U43E5LKHC3YOG6NOOYZQM6ZVA)
 
 #### Register page
 
 Alternatively, clicking on the Login link, then on the Sign Up menu item displays this page:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/register-page.png)
+![](https://raw.githubusercontent.com/johnserraon/digits/cleanup/doc/digits-register.png?token=GHSAT0AAAAAACNAL4U4CTBS73LQ663J3CT4ZQM62AA)
 
 
 #### Landing (after Login) page, non-Admin user
 
 Once you log in (either to an existing account or by creating a new one), the navbar changes as follows:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/landing-after-login-page.png)
+![](https://raw.githubusercontent.com/johnserraon/digits/cleanup/doc/digits-landing-page.png?token=GHSAT0AAAAAACNAL4U5WTAPXV5C5QWSEBE4ZQM62LQ)
 
-You can now add new Stuff documents, and list the Stuff you have created. Note you cannot see any Stuff created by other users.
+You can now add new contact cards, and list the contacts you have created. Note you cannot see any contacts created by other users.
 
 #### Add Contact page
 
@@ -109,6 +109,8 @@ The Add Contact page allows a user to add a new contact card containing a first 
 
 The List Contacts page shows all contact cards that the user has created or has associated with their account.
 
+![](https://raw.githubusercontent.com/johnserraon/digits/cleanup/doc/digits-list-contacts.png?token=GHSAT0AAAAAACNAL4U4ICTQTV2MSEVQJPEEZQM63KA)
+
 * Each contact card is equipped with a section to write timestamped notes, helping users keep track of business plans and other miscellaneous contact information.
 
 
@@ -117,6 +119,8 @@ The List Contacts page shows all contact cards that the user has created or has 
 #### Edit Contact page
 
 After clicking on the "Edit" link associated with a contact, the details of the card can be edited.
+
+![](https://raw.githubusercontent.com/johnserraon/digits/cleanup/doc/digits-edit-contact.png?token=GHSAT0AAAAAACNAL4U4XXGLUI5MDFJ3J2LKZQM63XA)
 
 #### Landing (after Login), Admin user
 
