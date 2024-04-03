@@ -5,13 +5,19 @@ digits is a Meteor application that allows registered users to create their own 
 
 ## Installation
 
-First, [install Meteor](https://www.meteor.com/install).
+First, [install Meteor](https://www.meteor.com/install), and [GitHub Desktop](https://desktop.github.com/).
 
-Second, go to [https://github.com/ics-software-engineering/meteor-application-template-react](https://github.com/ics-software-engineering/meteor-application-template-react), and click the "Use this template" button. Complete the dialog box to create a new repository that you own that is initialized with this template's files.
+Second, go to [https://github.com/johnserraon/digits](https://github.com/johnserraon/digits), click the "Code" dropdown and clone the digits repo (i.e. using the "Open with GitHub Desktop" option). Complete the dialog box to create a new repository 
+that 
+you 
+own 
+that is 
+initialized 
+with 
+this 
+application's files.
 
-Third, go to your newly created repository, and click the "Clone or download" button to download your new GitHub repo to your local file system.  Using [GitHub Desktop](https://desktop.github.com/) is a great choice if you use MacOS or Windows.
-
-Fourth, cd into the app/ directory of your local copy of the repo, and install third party libraries with:
+Third, cd into the app/ directory of your local copy of the repo, and install third party libraries with:
 
 ```
 $ meteor npm install
@@ -19,7 +25,7 @@ $ meteor npm install
 
 ## Running the system
 
-Once the libraries are installed, you can run the application by invoking the "start" script in the [package.json file](https://github.com/ics-software-engineering/meteor-application-template-react/blob/master/app/package.json):
+Once the libraries are installed, you can run the application by invoking the "start" script in the [package.json file](https://github.com/johnserraon/digits/blob/cleanup/app/package.json):
 
 ```
 $ meteor npm run start
@@ -30,33 +36,32 @@ The first time you run the app, it will create some default users and data. Here
 ```
  meteor npm run start 
 
-> meteor-application-template-react@ start /Users/carletonmoore/GitHub/ICS314/meteor-application-template-react/app
+>> meteor-application-template-react@ start C:\Users\YOUR_USERNAME\Documents\GitHub\digits\app
 > meteor --no-release-check --exclude-archs web.browser.legacy,web.cordova --settings ../config/settings.development.json
 
-[[[[[ ~/GitHub/ICS314/meteor-application-template-react/app ]]]]]
+[[[[[ C:\Users\YOUR_USERNAME\Documents\GitHub\digits\app ]]]]]
 
-=> Started proxy.                             
-=> Started HMR server.                        
-=> Started MongoDB.                           
-I20220529-12:09:18.384(-10)? Creating the default user(s)
-I20220529-12:09:18.389(-10)?   Creating user admin@foo.com.
-I20220529-12:09:18.453(-10)?   Creating user john@foo.com.
-I20220529-12:09:18.515(-10)? Creating default data.
-I20220529-12:09:18.515(-10)?   Adding: Basket (john@foo.com)
-I20220529-12:09:18.599(-10)?   Adding: Bicycle (john@foo.com)
-I20220529-12:09:18.600(-10)?   Adding: Banana (admin@foo.com)
-I20220529-12:09:18.601(-10)?   Adding: Boogie Board (admin@foo.com)
-I20220529-12:09:18.773(-10)? Monti APM: completed instrumenting the app
+=> Started proxy.
+=> Started HMR server.
+=> Started MongoDB.
+I20240402-19:55:54.185(-10)? Creating the default user(s)
+I20240402-19:55:54.201(-10)?   Creating user admin@foo.com.
+I20240402-19:55:54.405(-10)?   Creating user john@foo.com.
+I20240402-19:55:54.490(-10)? Creating default contacts.
+I20240402-19:55:54.491(-10)?   Adding: Johnson (john@foo.com)
+I20240402-19:55:54.507(-10)?   Adding: Casanova (john@foo.com)
+I20240402-19:55:54.510(-10)?   Adding: Binsted (admin@foo.com)
 => Started your app.
 
 => App running at: http://localhost:3000/
+
 ```
 
 Periodically, you might see `Error starting Mongo (2 tries left): Cannot run replSetReconfig because the node is currently updating its configuration` after the `=> Started HMR server.`. It doesn't seem to be a problem since the MongoDB does start.
 
 ### Viewing the running app
 
-If all goes well, the template application will appear at [http://localhost:3000](http://localhost:3000).  You can login using the credentials in [settings.development.json](https://github.com/ics-software-engineering/meteor-application-template-react/blob/main/config/settings.development.json), or else register a new account.
+If all goes well, the template application will appear at [http://localhost:3000](http://localhost:3000).  You can login using the credentials in [settings.development.json](https://github.com/johnserraon/digits/blob/cleanup/config/settings.development.json), or else register a new account.
 
 ### ESLint
 
@@ -74,7 +79,7 @@ The following sections describe the major features of digits.
 
 When you retrieve the app at http://localhost:3000, this is what should be displayed:
 
-![](https://raw.githubusercontent.com/johnserraon/digits/cleanup/doc/digits-landing-nouser.png?token=GHSAT0AAAAAACNAL4U5I4RGPXANCZINT4DQZQM6ZHQ)
+<img src="doc/digits-landing-nouser.png" alt="digits landing page without user login">
 
 The next step is to use the Login menu to either Login to an existing account or register a new account.
 
@@ -82,20 +87,20 @@ The next step is to use the Login menu to either Login to an existing account or
 
 Clicking on the Login link, then on the Sign In menu item displays this page:
 
-![](https://raw.githubusercontent.com/johnserraon/digits/cleanup/doc/digits-login.png?token=GHSAT0AAAAAACNAL4U43E5LKHC3YOG6NOOYZQM6ZVA)
+<img src="doc/digits-login.png" alt="digits login page">
 
 #### Register page
 
 Alternatively, clicking on the Login link, then on the Sign Up menu item displays this page:
 
-![](https://raw.githubusercontent.com/johnserraon/digits/cleanup/doc/digits-register.png?token=GHSAT0AAAAAACNAL4U4CTBS73LQ663J3CT4ZQM62AA)
+<img src="doc/digits-register.png" alt="digits page for registering a new account">
 
 
 #### Landing (after Login) page, non-Admin user
 
 Once you log in (either to an existing account or by creating a new one), the navbar changes as follows:
 
-![](https://raw.githubusercontent.com/johnserraon/digits/cleanup/doc/digits-landing-page.png?token=GHSAT0AAAAAACNAL4U5WTAPXV5C5QWSEBE4ZQM62LQ)
+<img src="doc/digits-landing-page.png" alt="digits landing page with user login">
 
 You can now add new contact cards, and list the contacts you have created. Note you cannot see any contacts created by other users.
 
@@ -103,13 +108,13 @@ You can now add new contact cards, and list the contacts you have created. Note 
 
 The Add Contact page allows a user to add a new contact card containing a first name, last name, business address, image URL, and description of their contact.
 
-![](https://raw.githubusercontent.com/johnserraon/digits/cleanup/doc/digits-add-contact.png?token=GHSAT0AAAAAACNAL4U4ITVL3UFCVLS4UYCMZQM6X5Q)
+<img src="doc/digits-add-contact.png" alt="digits Add Contact page">
 
 #### List Contacts page
 
 The List Contacts page shows all contact cards that the user has created or has associated with their account.
 
-![](https://raw.githubusercontent.com/johnserraon/digits/cleanup/doc/digits-list-contacts.png?token=GHSAT0AAAAAACNAL4U4ICTQTV2MSEVQJPEEZQM63KA)
+<img src="doc/digits-list-contacts.png" alt="digits List Contacts page">
 
 * Each contact card is equipped with a section to write timestamped notes, helping users keep track of business plans and other miscellaneous contact information.
 
@@ -120,29 +125,29 @@ The List Contacts page shows all contact cards that the user has created or has 
 
 After clicking on the "Edit" link associated with a contact, the details of the card can be edited.
 
-![](https://raw.githubusercontent.com/johnserraon/digits/cleanup/doc/digits-edit-contact.png?token=GHSAT0AAAAAACNAL4U4XXGLUI5MDFJ3J2LKZQM63XA)
+<img src="doc/digits-edit-contact.png" alt="digits Edit Contact page">
 
 #### Landing (after Login), Admin user
 
 You can define an "admin" user in the settings.json file. This user, after logging in, gets a special entry in the navbar:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/admin-landing-page.png)
+<img src="doc/digits-landing-admin.png" alt="digits landing page (with Admin login)">
 
 #### Admin page (list all users stuff)
 
-To provide a simple example of a "super power" for Admin users, the Admin page lists all of the Stuff by all of the users:
+To provide a simple example of a "super power" for Admin users, the Admin page lists all of the contacts by all of the users:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/admin-list-stuff-page.png)
+<img src="doc/digits-admin-page.png" alt="digits Admin-only page">
 
 Note that non-admin users cannot get to this page, even if they type in the URL by hand.
 
 ### Collections
 
-The application implements a single Collection called "Stuffs". Each Stuffs document has the following fields: name, quantity, condition, and username.
+The application implements a single Collection called "Contacts". Each Contacts document has the following fields: firstName, lastName, address, image, description, and owner.
 
-The Stuffs collection is defined in [imports/api/stuff/stuff.js](https://github.com/ics-software-engineering/meteor-application-template-react/blob/main/app/imports/api/stuff/stuff.js).
+The Contacts collection is defined in [imports/api/contact/Contacts.js](https://github.com/johnserraon/digits/blob/cleanup/app/imports/api/contact/Contacts.js).
 
-The Stuffs collection is initialized in [imports/startup/server/Mongo.js](https://github.com/ics-software-engineering/meteor-application-template-react/blob/main/app/imports/startup/server/Mongo.js).
+The Contacts collection is initialized in [imports/startup/server/Mongo.js](https://github.com/ics-software-engineering/meteor-application-template-react/blob/main/app/imports/startup/server/Mongo.js).
 
 ### CSS
 
@@ -169,37 +174,38 @@ body {
 
 For display and navigation among its four pages, the application uses [React Router](https://reacttraining.com/react-router/).
 
-Routing is defined in [imports/ui/layouts/App.jsx](https://github.com/ics-software-engineering/meteor-application-template-react/blob/main/app/imports/ui/layouts/App.jsx).
+Routing is defined in [imports/ui/layouts/App.jsx](https://github.com/johnserraon/digits/blob/cleanup/app/imports/ui/layouts/App.jsx).
 
 
 ### Authentication
 
 For authentication, the application uses the Meteor accounts package.
 
-When the application is run for the first time, a settings file (such as [config/settings.development.json](https://github.com/ics-software-engineering/meteor-application-template-react/blob/main/config/settings.development.json)) should be passed to Meteor. That will lead to a default account being created through the code in [imports/startup/server/accounts.js](https://github.com/ics-software-engineering/meteor-application-template-react/blob/main/app/imports/startup/server/accounts.js).
+When the application is run for the first time, a settings file (such as [config/settings.development.json](https://github.com/johnserraon/digits/blob/cleanup/config/settings.development.json)) should be 
+passed to Meteor. That will lead to a default account being created through the code in [imports/startup/server/Accounts.js](https://github.com/johnserraon/digits/blob/cleanup/app/imports/startup/server/Accounts.js).
 
 The application allows users to register and create new accounts at any time.
 
 ### Authorization
 
-Only logged in users can manipulate Stuff documents (but any registered user can manipulate any Stuff document, even if they weren't the user that created it.)
+Only logged in users can manipulate Contact cards (but any registered user can manipulate any Contact card, even if they weren't the user that created it.)
 
 ### Configuration
 
-The [config](https://github.com/ics-software-engineering/meteor-application-template-react/blob/main/config) directory is intended to hold settings files.  The repository contains one file: [config/settings.development.json](https://github.com/ics-software-engineering/meteor-application-template-react/blob/main/config/settings.development.json).
+The [config](https://github.com/johnserraon/digits/tree/cleanup/config) directory is intended to hold settings files.  The repository contains one file: [config/settings.development.json](https://github.com/johnserraon/digits/blob/cleanup/config/settings.development.json).
 
-The [.gitignore](https://github.com/ics-software-engineering/meteor-application-template-react/blob/main/.gitignore) file prevents a file named settings.production.json from being committed to the repository. So, if you are deploying the application, you can put settings in a file named settings.production.json and it will not be committed.
+The [.gitignore](https://github.com/johnserraon/digits/blob/cleanup/.gitignore) file prevents a file named settings.production.json from being committed to the repository. So, if you are deploying the application, you can put settings in a file named settings.production.json and it will not be committed.
 
 ### Quality Assurance
 
 #### ESLint
 
-The application includes a [.eslintrc](https://github.com/ics-software-engineering/meteor-application-template-react/blob/main/app/.eslintrc) file to define the coding style adhered to in this application. You can invoke ESLint from the command line as follows:
+The application includes a [.eslintrc](https://github.com/johnserraon/digits/blob/cleanup/app/.eslintrc.js) file to define the coding style adhered to in this application. You can invoke ESLint from the command line as follows:
 
 ```
-[~/meteor-application-template-react/app]-> meteor npm run lint
+[~/digits/app]-> meteor npm run lint
 
-> meteor-application-template-react@ lint /Users/philipjohnson/meteor-application-template-react/app
+> digits@ lint /Users/YOUR_USERNAME/digits/app
 > eslint --quiet ./imports
 ```
 
