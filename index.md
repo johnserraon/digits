@@ -1,25 +1,7 @@
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/landing-page.png)
+![](https://raw.githubusercontent.com/johnserraon/digits/cleanup/doc/digits-landing-page.png?token=GHSAT0AAAAAACNAL4U5WM6L3GOHWUGO3THKZQM6GXQ)
 
-meteor-application-template-react is a sample Meteor 2.9 application that illustrates: 
+digits is a Meteor application that allows registered users to create their own address book of business contacts.
 
-  * A standard directory layout using 'imports/' as recommended in the [Meteor Guide](https://guide.meteor.com/structure.html)
-  * [Bootstrap 5 React](https://react-bootstrap.github.io/) for user interface.
-  * [Uniforms](https://uniforms.tools/) for form development.
-  * [alanning:roles](https://github.com/alanning/meteor-roles) to implement a special "Admin" user.
-  * Authorization, authentication, and registration using built-in Meteor packages.
-  * Initialization of users and data from a settings file.
-  * Alerts regarding success or failure of DB updates using [Sweet Alert](https://sweetalert.js.org/).
-  * Quality assurance using [ESLint](http://eslint.org) with packages to partially enforce the [Meteor Coding Standards](https://guide.meteor.com/code-style.html) and the [AirBnB Javascript Style Guide](https://github.com/airbnb/javascript).
-
-The goal of this template is to help you get quickly started doing Meteor development by providing a reasonable directory structure for development and deployment, a set of common extensions to the core framework, and boilerplate code to implement basic page display, navigation, forms, roles, and collection manipulation.
-
-To keep this codebase simple and small, some important capabilities are intentionally excluded from this template:
-
-  * Unit Testing.
-  * Security (meteor-application-template-react enables the insecure packages)
-  * Deployment
-
-Examples of the these capabilities will be provided elsewhere.
 
 ## Installation
 
@@ -84,66 +66,9 @@ You can verify that the code obeys our coding standards by running ESLint over t
 meteor npm run lint
 ```
 
-## Walkthrough
+## Application Walkthrough
 
-The following sections describe the major features of this template.
-
-### Directory structure
-
-The top-level directory structure is:
-
-```
-.github     # holds the GitHub Continuous Integration action and Issue template.
-app/        # holds the Meteor application sources
-config/     # holds configuration files, such as settings.development.json
-doc/        # holds developer documentation, user guides, etc.
-.gitignore  # don't commit IntelliJ project files, node_modules, and settings.production.json
-```
-
-This structure separates documentation files (such as screenshots) and configuration files (such as the settings files) from the actual Meteor application.
-
-The app/ directory has this structure:
-
-```
-.deploy/
-  .gitignore     # don't commit mup.js or settings.json
-  mup.sample.js  # sample mup.js file used for deploying the application
-  settings.sample.json # sample settings file
-  
-client/
-  main.html      # The boilerplate HTML with a "root" div to be manipulated by React.
-  main.js        # import startup files.
-
-imports/
-  api/           # Define collections
-    stuff/       # The Stuffs collection definition
-  startup/       # Define code to run when system starts up (client-only, server-only, both)
-    client/
-    server/
-  ui/
-    components/  # Contains page elements, some of which could appear on multiple pages.
-    layouts/     # Contains top-level layout (<App> component).
-    pages/       # Contains components for each page.
-
-node_modules/    # managed by npm
-
-public/          # static assets (like images) can go here.
-
-server/
-   main.js       # import the server-side js files.
-   
-tests/           # testcafe acceptance tests.
-```
-
-### Import conventions
-
-This system adheres to the Meteor guideline of putting all application code in the imports/ directory, and using client/main.js and server/main.js to import the code appropriate for the client and server in an appropriate order.
-
-### Application functionality
-
-The application implements a simple CRUD application for managing "Stuff", which is a Mongo Collection consisting of a name (String), a quantity (Number), a condition (one of 'excellent', 'good', 'fair', or 'poor') and an owner.
-
-By default, each user only sees the Stuff that they have created.  However, the settings file enables you to define default accounts.  If you define a user with the role "admin", then that user gets access to a special page which lists all the Stuff defined by all users.
+The following sections describe the major features of digits.
 
 #### Landing page
 
@@ -174,25 +99,22 @@ Once you log in (either to an existing account or by creating a new one), the na
 
 You can now add new Stuff documents, and list the Stuff you have created. Note you cannot see any Stuff created by other users.
 
-#### Add Stuff page
+#### Add Contact page
 
-After logging in, here is the page that allows you to add new Stuff:
+The Add Contact page allows a user to add a new contact card containing a first name, last name, business address, image URL, and description of their contact.
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/add-stuff-page.png)
+#### List Contacts page
 
-#### List Stuff page
+The List Contacts page shows all contact cards that the user has created or has associated with their account.
 
-After logging in, here is the page that allows you to list all the Stuff you have created:
+* Each contact card is equipped with a section to write timestamped notes, helping users keep track of business plans and other miscellaneous contact information.
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/list-stuff-page.png)
 
-You click the "Edit" link to go to the Edit Stuff page, shown next.
+* You can also click the "Edit" link to go to the Edit Contact page, described next.
 
-#### Edit Stuff page
+#### Edit Contact page
 
-After clicking on the "Edit" link associated with an item, this page displays that allows you to change and save it:
-
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/edit-stuff-page.png)
+After clicking on the "Edit" link associated with a contact, the details of the card can be edited.
 
 #### Landing (after Login), Admin user
 
