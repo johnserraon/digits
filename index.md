@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/johnserraon/digits/cleanup/doc/digits-landing-page.png?token=GHSAT0AAAAAACNAL4U5WM6L3GOHWUGO3THKZQM6GXQ)
+<img src="doc/digits-landing-page.png" alt="digits landing page with user login">
 
 digits is a Meteor application that allows registered users to create their own address book of business contacts.
 
