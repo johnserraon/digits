@@ -2,29 +2,6 @@
 
 digits is a Meteor application that allows registered users to create their own address book of business contacts.
 
-
-## The Rainbow Cards Team
-<div class="row">
-    <div class="col">
-        <ul>
-            <li>Daevin Bagcal</li>
-            <li>Benjamin Bercasio</li>
-            <li>Yuzuki Fujimoto</li>
-            <li>Elijah Saloma</li>
-            <li>John Serraon</li>
-        </ul>
-    </div>
-    <div class="col">
-        <ul>
-            <li>(daevinb@hawaii.edu)</li>
-            <li>(bbercasi@hawaii.edu)</li>
-            <li>(yuzukif@hawaii.edu)</li>
-            <li>(esaloma@hawaii.edu)</li>
-            <li>(jserraon@hawaii.edu)</li>
-        </ul>
-    </div>
-</div>
-
 ## Installation
 
 First, [install Meteor](https://www.meteor.com/install), and [GitHub Desktop](https://desktop.github.com/).
